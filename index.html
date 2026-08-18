@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Untuk Aditya ☀️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MUSIK UTAMA -->
+    <audio id="mainMusic" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- AUDIO SUARA AULIA -->
+    <audio id="voiceAudio">
+        <source src="assets/voice.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- ================================= -->
+    <!-- HALAMAN PEMBUKA -->
+    <!-- ================================= -->
+
+    <section id="opening" class="page active">
+
+        <div class="sun-wallpaper"></div>
+
+        <div class="opening-content">
+
+            <h1>Hello, sunshine!</h1>
+
+            <h2>just open me, aditya :) </h2>
+
+            <button
+                class="icon-button"
+                onclick="openFirstPage()"
+                aria-label="Open">
+                ☀️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================= -->
+    <!-- HALAMAN 1 -->
+    <!-- ================================= -->
+
+    <section id="page1" class="page">
+
+        <div class="sun-wallpaper"></div>
+
+        <div class="content">
+
+            <button
+                id="musicButton"
+                class="music-button"
+                onclick="startMusic()">
+                🎵
+            </button>
+
+            <div id="birthdayText" class="hidden-text">
+
+                <h1>
+                    SELAMAT ULANG TAHUN<br>
+                    ADITYAKU,
+                    MATAHARIKU,
+                    DUNIAKU,
+                    MILIKKUUU!!
+                     
+                </h1>
+
+
+
+
+
+
+            </div>
+            
+            
+            
+            
+            
+
+            <button
+                id="toPage2"
+                class="cute-button hidden"
+                onclick="goToPage(2)">
+                yuk sengg ♡
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================= -->
+    <!-- HALAMAN 2 -->
+    <!-- ================================= -->
+
+    <section id="page2" class="page">
+
+        <div class="sun-wallpaper"></div>
+
+        <div class="content">
+
+            <div id="rememberText">
+
+                <h1>
+                    semoga kamu selalu<br>
+                    mengingat dan mencintaiku selama hidupmu...
+                </h1>
+
+            </div>
+
+            <button
+                id="showPhotosButton"
+                class="cute-button hidden"
+                onclick="startPhotos()">
+                ☀️
+            </button>
+
+
+            <!-- AREA FOTO -->
+
+            <div id="photoContainer" class="photo-container hidden">
+
+                <img
+                    id="currentPhoto"
+                    src=""
+                    alt="Kenangan">
+
+                <div
+                    id="photoCaption"
+                    class="photo-caption">
+                </div>
+
+            </div>
+
+
+            <button
+                id="nextPhotoButton"
+                class="cute-button hidden"
+                onclick="nextPhoto()">
+                ♡
+            </button>
+
+
+            <button
+                id="toPage3"
+                class="cute-button hidden"
+                onclick="goToPage(3)">
+                ☀️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================= -->
+    <!-- HALAMAN 3 -->
+    <!-- ================================= -->
+
+    <section id="page3" class="page">
+
+        <div class="sun-wallpaper"></div>
+
+        <div class="content">
+
+            <h1 class="voice-title">
+                Sekali lagi selamat ulang tahun,cintaku..
+            </h1>
+
+            <button
+                id="playVoiceButton"
+                class="play-button"
+                onclick="playVoice()">
+                ▶️
+            </button>
+
+            <p id="voiceStatus" class="voice-status">
+                play me ♡
+            </p>
+
+            <button
+                id="toPage4"
+                class="cute-button hidden"
+                onclick="goToPage(4)">
+                ☀️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================= -->
+    <!-- HALAMAN 4 -->
+    <!-- ================================= -->
+
+    <section id="page4" class="page">
+
+        <div class="sun-wallpaper"></div>
+
+        <div class="letter-container">
+
+            <div id="letterText"></div>
+
+            <button
+                id="toFinal"
+                class="cute-button hidden"
+                onclick="goToPage(5)">
+                ♡
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================= -->
+    <!-- HALAMAN TERAKHIR -->
+    <!-- ================================= -->
+
+    <section id="page5" class="page">
+
+        <div class="sun-wallpaper"></div>
+
+        <div class="ending">
+
+            <div class="ending-love">
+                Sekali lagi, Selamat Ulang Tahun, M. Aditya Prabowo, milikku, selamanya...
+            </div>
+
+            <div class="signature">
+
+                <div class="signed">
+                    With love,
+                </div>
+
+                <div class="one-and-only">
+                    Your one and only..
+                </div>
+
+                <div class="aulia">
+                    Aulia.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
